@@ -12,7 +12,7 @@ let tasks = JSON.parse(localStorage.getItem('tasks')) === null ? [] : JSON.parse
 
 AddBtn.addEventListener('click', () => {
   if (Input.value === '') {
-    Span.innerHTML = 'Input field is required!';
+    Span.innerHTML = 'Input field is required';
   } else {
     const obj = {
       description: Input.value,
